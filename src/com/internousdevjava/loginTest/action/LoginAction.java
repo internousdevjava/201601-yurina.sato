@@ -26,16 +26,19 @@ public class LoginAction extends ActionSupport implements SessionAware{
             return ERROR;
         }
 
-
         session.put("id",id);
 
         return SUCCESS;
     }
 
+
+    /**
+     *
+     * @return id 値を取得します。
+     */
     public String getId(){
         return id;
     }
-
     public void setId(String id){
         this.id = id;
     }
