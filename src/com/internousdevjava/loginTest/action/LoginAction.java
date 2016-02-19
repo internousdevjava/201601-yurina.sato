@@ -7,11 +7,13 @@ import org.apache.struts2.interceptor.SessionAware;
 import com.internousdevjava.loginTest.dao.loginDAO;
 import com.opensymphony.xwork2.ActionSupport;
 /**
- * @author internous
+ * ログインするために値を持ってくるアクションクラス
+ * @author yurina sato
+ * @version1.0
+ * @since1.0
  *
  */
 public class LoginAction extends ActionSupport implements SessionAware{
-    /* ID */
     public String id;
     public String password;
     private Map<String,Object>session;

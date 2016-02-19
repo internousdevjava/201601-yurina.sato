@@ -18,9 +18,9 @@ import java.sql.SQLException;
 public class DBConnector{
 
 	private static String driverName = "com.mysql.jdbc.Driver";
-	private static String url = "jdbc:mysql://localhost:3306/struts2"; //struts2 DB名
-	private static String user = "root"; //DBのユーザ名
-	private static String pass = "mysql";  //DBに接続するときのパスワード
+	private static String url = "jdbc:mysql://localhost:3306/struts2";
+	private static String user = "root";
+	private static String pass = "mysql";
 
 
 	public static Connection getConnection(){
