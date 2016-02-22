@@ -14,6 +14,7 @@ import com.opensymphony.xwork2.ActionSupport;
  *
  */
 public class LoginAction extends ActionSupport implements SessionAware{
+
     public String id;
     public String password;
     private Map<String,Object>session;
@@ -33,20 +34,33 @@ public class LoginAction extends ActionSupport implements SessionAware{
 
 
     /**
-     *
-     * @return id 値を取得します。
+     *idを取得するメソッド
+     * @return id 値を返します。
      */
     public String getId(){
         return id;
     }
+
+    /**
+     * idを設定するメソッド
+     * @param id
+     */
     public void setId(String id){
         this.id = id;
     }
 
+    /**
+     * パスワードを取得するメソッド
+     * @return password 値を返します。
+     */
     public String getPass(){
         return password;
     }
 
+    /**
+     * パスワードを設定するメソッド
+     * @param password
+     */
     public void setPass(String password){
         this.password = password;
     }
@@ -54,6 +68,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
     public Map<String, Object> getSession(){
         return session;
     }
+
 
     public void setSession(Map<String, Object> session){
         this.session = session;
